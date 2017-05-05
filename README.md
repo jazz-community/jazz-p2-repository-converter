@@ -13,7 +13,7 @@ To use the converted p2 repository as a maven dependency, which is required for 
 ## Usage
 The provided scripts are simple, they just call the FeaturesAndBundlesPublisher application with the required parameters. You can read more about the equinox publisher features in the [eclipse wiki](https://wiki.eclipse.org/Equinox/p2/Publisher).
 
-** Please note that the destination path must be an absolute path from the root of your file system **
+**Please note that the destination path must be an absolute path from the root of your file system**
 
 If you get any errors regarding the logging configuration, you can safely ignore them. The equinox launcher will run correctly and log to console.
 
@@ -38,7 +38,7 @@ Run the `converter.sh` script. The parameters are positional:
 
 ```
 $1: equinox/launcher/path (the path you found when using find above)
-$2: /path/to/destination (**absolute** path where you want the p2 repository created)
+$2: /path/to/destination (absolute path where you want the p2 repository created)
 $3: /path/to/sdk
 ```
 
