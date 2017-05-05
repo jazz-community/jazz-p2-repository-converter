@@ -60,6 +60,7 @@ The easiest way of achieve this is to create a profile for your p2 repository an
             <repositories>
                 <repository>
                     <id>ibm sdk p2 repository</id>
+                    <layout>p2</layout>
                     <url>file:/home/usr/workspaces/jazz/jazz-p2-repository-converter/p2dest</url>
                 </repository>
             </repositories>
