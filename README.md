@@ -92,9 +92,9 @@ Alternatively, you can configure the p2 repository on a per-project basis. In or
 ```
 
 ## Contributing
-Please use the [Issue Tracker](https://github.com/jazz-community/__________/issues) of this repository to report issues or suggest enhancements.<br>
+Please use the [Issue Tracker](https://github.com/jazz-community/jazz-p2-repository-converter/issues) of this repository to report issues or suggest enhancements.<br>
 Pull requests are very welcome.
 
 ## Licensing
 Copyright (c) Siemens AG. All rights reserved.<br>
-Licensed under the [MIT](https://github.com/jazz-community/_______/blob/master/LICENSE) License.
+Licensed under the [MIT](https://github.com/jazz-community/jazz-p2-repository-converter/blob/master/LICENSE) License.
