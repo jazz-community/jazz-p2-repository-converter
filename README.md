@@ -1,14 +1,16 @@
 # SDK to p2 repository converter
-Command line scripts for converting a collection of java artifacts into a p2 repository.
+Command line scripts for converting a collection of java artifacts into a proper p2 repository.
 
 ## Abstract
-In order to use the sdk files provided by IBM for development / debugging etc. with eclipse plugins, they have to be bundled as a p2 repository. These scripts provide the required functionality for creating a p2 repository on windows and linux.
+In order to use the SDK files provided by IBM for development and debugging of their Eclipse based plugins, they have to be bundled as a p2 repository. These scripts provide the required functionality for creating a p2 repository on Windows and Linux.
 
-To use the converted p2 repository as a maven dependency, which is required for compiling many of our projects, a local maven p2 repository has to be created. This is is explained in this readme.
+To use the converted p2 repository as a maven dependency, which is required for compiling many of our projects, a local maven p2 repository has to be created. This is is explained in the following sections.
+
+All these manual steps described in here would not be required if the RTC SDK would be available on [Maven Central](https://search.maven.org/) for immediate use.
 
 ## Prerequisites
-1. Download and install [eclipse](https://www.eclipse.org/downloads/).
-2. Download and extract the [IBM RTC SDK ](https://jazz.net/downloads/rational-team-concert). The download for the SDK is usually in the 'All Downloads' tab. Note the extraction location, you will need it later.
+1. Download and install [Eclipse](https://www.eclipse.org/downloads/).
+2. Download and extract the [IBM RTC Server SDK](https://jazz.net/downloads/rational-team-concert). The download for the SDK is usually in the 'All Downloads' tab. Note the extraction location, you will need it later.
 
 ## Usage
 The provided scripts are simple, they just call the FeaturesAndBundlesPublisher application with the required parameters. You can read more about the equinox publisher features in the [eclipse wiki](https://wiki.eclipse.org/Equinox/p2/Publisher).
