@@ -51,7 +51,7 @@ $3: /path/to/sdk
 You can use docker to build the p2 repository. All dependencies except the sdk file are pulled when creating the image, there is no need to install anything.
 
 ```
-docker build . -t p2-creation
+docker build docker -t p2-creation
 docker run -i -t p2-creation /bin/bash
 ```
 

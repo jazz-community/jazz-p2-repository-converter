@@ -8,11 +8,14 @@ mkdir /output
 for zip in /sdks/*.zip; do
     base=${zip##*/}
     fname=${base%.*}
+    
+    unzip $zip -d /sdks/$fname
+
     java -jar $equinoxLauncher \
         -application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher \
-        -metadataRepository file:/output/$fname \
-        -artifactRepository file:/output/$fname \
-        -source $zip \
+        -metadataRepository file:/output/$fname/ \
+        -artifactRepository file:/output/$fname/ \
+        -source /sdks/$fname \
         -publishArtifacts \
         -compress \;
 done
