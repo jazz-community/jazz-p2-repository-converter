@@ -13,9 +13,9 @@ for zip in /sdks/*.zip; do
 
     java -jar $equinoxLauncher \
         -application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher \
-        -metadataRepository file:/deflated/$fname/ \
-        -artifactRepository file:/deflated/$fname/ \
-        -source /sdks/$fname \
+        -metadataRepository file:/output/$fname/ \
+        -artifactRepository file:/output/$fname/ \
+        -source /deflated/$fname \
         -publishArtifacts \
         -compress \;
 done
