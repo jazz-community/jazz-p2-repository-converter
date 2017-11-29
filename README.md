@@ -47,6 +47,14 @@ $3: /path/to/sdk
 #### Example
 `./converter.sh /home/usr/eclipse/plugins/org.eclipse.equinox.launcher_1.3.200.v20160318-1642.jar /home/usr/workspaces/jazz-p2-repository-converter/p2dest /home/usr/workspaces/jazz-sdk`
 
+### Docker
+You can use docker to build the p2 repository. All dependencies except the sdk file are pulled when creating the image, there is no need to install anything.
+
+```
+docker build . -t p2-creation
+docker run -i -t p2-creation /bin/bash
+```
+
 ## Maven repository
 In order to use the p2 repository you created above with maven, you have to add the location of your p2 repository as a local repository to your maven settings. The easiest way to do this for all projects is to add the location to your global maven settings file. In Windows, the default location of this file is in your `C:\Users\username\.m2\settings.xml` directory, and in linux, the default location is in `/home/usr/.m2/settings.xml`
 
