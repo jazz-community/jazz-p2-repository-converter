@@ -102,7 +102,7 @@ Alternatively, you can configure the p2 repository on a per-project basis. In or
 </project>
 ```
 ## Contributing
-Please use the [Issue Tracker](https://github.com/jazz-community/rtc-absence-widget/issues) of this repository to report issues or suggest enhancements.
+Please use the [Issue Tracker](https://github.com/jazz-community/jazz-p2-repository-converter/issues) of this repository to report issues or suggest enhancements.
 
 For general contribution guidelines, please refer to [CONTRIBUTING.md](https://github.com/jazz-community/jazz-p2-repository-converter/blob/master/CONTRIBUTING.md)
 
